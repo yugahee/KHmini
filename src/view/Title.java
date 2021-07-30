@@ -18,8 +18,8 @@ import javax.swing.JPanel;
 public class Title extends JFrame {
 	
 	public Title() {
-		super("Gong Cha App");
-		setBounds(500, 100, 300, 500);
+		super("Gong Cha App1");
+		setBounds(500, 100, 300, 500); 
 		
 		try {
 			setIconImage(ImageIO.read(new File("image/Title.jpg")));

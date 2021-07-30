@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 public class Title extends JFrame {
 	
 	public Title() {
-		super("Gong Cha App1");
+		super("Gong Cha App1111");
 		setBounds(500, 100, 300, 500); 
 		
 		try {

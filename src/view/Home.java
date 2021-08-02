@@ -38,11 +38,11 @@ public class Home extends JPanel{
 		lbmain4.setLocation(20, 210);
 		lbmain4.setSize(300, 30);
 		add(lbmain4);
+
 		
-		JButton btnmain1 = new JButton(); // 현정
+		ImageIcon firstimg = new ImageIcon("image/firstgongcharbanner.png"); // 현정
+		JButton btnmain1 = new JButton(firstimg); 
 		JLabel firstlb = new JLabel();
-		Image firstimg = new ImageIcon("image/firstgongcharbanner.png").getImage();
-		firstlb.setIcon(new ImageIcon(firstimg));
 		btnmain1.add(firstlb);
 		btnmain1.setLocation(20, 80);
 		btnmain1.setSize(250, 50);
@@ -91,7 +91,7 @@ public class Home extends JPanel{
 		btnmain5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
+				new Order();
 			}
 			
 		});

@@ -1,11 +1,11 @@
 package run;
 
-import view.Title;
+import view.Controller;
 
 public class Run {
 	
 	public static void main(String[] args) {
-		Title tt = new Title();
+		Controller c = new Controller();
 	}
 	
 

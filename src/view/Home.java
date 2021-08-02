@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -41,13 +42,13 @@ public class Home extends JPanel{
 		add(lbmain4);
 
 		
-		ImageIcon firstimg = new ImageIcon("image/firstgongcharbanner.png"); // 현정
+		ImageIcon firstimg = new ImageIcon("image/orderimg/areyoufirst.png"); // 현정
 		JButton btnmain1 = new JButton(firstimg); 
 		// JLabel firstlb = new JLabel();
 		// btnmain1.add(firstlb);
 		// btnmain1.setIcon(firstimg);
 		btnmain1.setLocation(20, 80);
-		btnmain1.setSize(250, 50);
+		btnmain1.setSize(250, 60);
 		btnmain1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -56,9 +57,12 @@ public class Home extends JPanel{
 		});
 		add(btnmain1);
 		
-		JButton btnmain2 = new JButton("멤버십 가입해서 혜택받기!");
+		
+		ImageIcon memimg = new ImageIcon("image/orderimg/membership.png");
+		
+		JButton btnmain2 = new JButton(memimg);
 		btnmain2.setLocation(20, 150);
-		btnmain2.setSize(250, 50);
+		btnmain2.setSize(250, 60);
 		add(btnmain2);
 		
 		

@@ -5,6 +5,7 @@ import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -42,8 +43,9 @@ public class Home extends JPanel{
 		
 		ImageIcon firstimg = new ImageIcon("image/firstgongcharbanner.png"); // ÇöÁ¤
 		JButton btnmain1 = new JButton(firstimg); 
-		JLabel firstlb = new JLabel();
-		btnmain1.add(firstlb);
+		// JLabel firstlb = new JLabel();
+		// btnmain1.add(firstlb);
+		// btnmain1.setIcon(firstimg);
 		btnmain1.setLocation(20, 80);
 		btnmain1.setSize(250, 50);
 		btnmain1.addMouseListener(new MouseAdapter() {

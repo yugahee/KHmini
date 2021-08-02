@@ -15,7 +15,6 @@ public class Controller extends JFrame{
 	JPanel title = new Title();
 	JPanel home = new Home();
 	JPanel pay = new Pay();
-	JPanel igcf = new IsGongcharFirst(null);
 	
 	
 	
@@ -41,10 +40,11 @@ public class Controller extends JFrame{
 				}
 			}
 		});
-
+		
 		
 		add(title);
 		
+
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

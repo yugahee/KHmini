@@ -3,7 +3,10 @@ package view;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -20,6 +23,12 @@ public class Order extends JFrame{
 		panel.setLayout(null);
 		panel.setBackground(Color.white);
 		
+		try {
+			this.setIconImage(ImageIO.read(new File("image/mainTitle.jpg")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		JLabel label = new JLabel();
 		Image mainImage = new ImageIcon("image/mainTitle.jpg").getImage().getScaledInstance(40, 50,0);
 		label.setIcon(new ImageIcon(mainImage));
@@ -33,6 +42,7 @@ public class Order extends JFrame{
 		title.setFont(new Font("", Font.BOLD, 20));
 		panel.add(title);
 		
+		/*
 		JLabel title1 = new JLabel("아메리카노");
 		title1.setLocation(40, 100);
 		title1.setSize(500, 150);
@@ -68,7 +78,7 @@ public class Order extends JFrame{
 		title6.setSize(500, 150);
 		title6.setFont(new Font("", Font.BOLD, 15));
 		// panel.add(title6);
-		
+		*/
 		
 		ImageIcon icon1 = new ImageIcon("image/orderimg/americono1.png");
 		ImageIcon icon2 = new ImageIcon("image/orderimg/milktea.png");

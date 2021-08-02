@@ -19,20 +19,14 @@ public class IsGongcharFirst {
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.white);
 		
-		frame.setSize(360, 600);
+		frame.setBounds(450, 200, 360, 600);//(360, 600);
 		
 		JLabel label = new JLabel();
 		
 		label.setHorizontalAlignment(JLabel.CENTER);
 		Image img = new ImageIcon("image/isgongcharfirst.png").getImage();
 		label.setIcon(new ImageIcon(img));
-		label.addMouseListener(new MouseAdapter() {
-			public void mouseClicked(MouseEvent e) {
-				frame.remove(panel);
-			}
-		});
 
-		
 		panel.add(label);
 		frame.add(panel);
 		

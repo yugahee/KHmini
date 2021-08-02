@@ -6,39 +6,46 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class IsGongcharFirst extends JPanel {
-	private Home home;
-	private JPanel IsGongcharFirst;
+public class IsGongcharFirst {
+	private IsGongcharFirst IsGongcharFirst;
 	
-	public IsGongcharFirst(Home home) {
-		this.home = home;
-		this.IsGongcharFirst = this;
+	public IsGongcharFirst() {
+		JFrame frame = new JFrame("공차가 처음이신가요?");
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.white);
 		
-		this.setBackground(Color.white);
+		frame.setSize(360, 600);
+		
 		JLabel label = new JLabel();
 		
 		label.setHorizontalAlignment(JLabel.CENTER);
-		
-		Image img = new ImageIcon("image/isgoncharfirst.PNG").getImage();
+		Image img = new ImageIcon("image/isgongcharfirst.png").getImage();
 		label.setIcon(new ImageIcon(img));
-		
-		this.add(label);
-		
-		this.addMouseListener(new MouseAdapter() {
-		@Override
-		public void mouseClicked(MouseEvent e) {
-			
-			
-		}
+		label.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				frame.remove(panel);
+			}
 		});
+
 		
+		panel.add(label);
+		frame.add(panel);
 		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	
 		
 	}
+	
+	public static void main(String[] args) {
+		new IsGongcharFirst();
+	}
+	
 
 	
 }

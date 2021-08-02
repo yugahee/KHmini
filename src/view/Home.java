@@ -10,7 +10,11 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+
+
 public class Home extends JPanel{
+	private Controller mf;
+	private Home mainPage;
 	
 	public Home() {
 		setBackground(Color.WHITE);
@@ -35,9 +39,19 @@ public class Home extends JPanel{
 		lbmain4.setSize(300, 30);
 		add(lbmain4);
 		
-		JButton btnmain1 = new JButton("처음 오신 분들에게 추천 메뉴 ~~!!");
+		JButton btnmain1 = new JButton(); // 현정
+		JLabel firstlb = new JLabel();
+		Image firstimg = new ImageIcon("image/firstgongcharbanner.png").getImage();
+		firstlb.setIcon(new ImageIcon(firstimg));
+		btnmain1.add(firstlb);
 		btnmain1.setLocation(20, 80);
 		btnmain1.setSize(250, 50);
+		btnmain1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				new IsGongcharFirst();
+			}
+		});
 		add(btnmain1);
 		
 		JButton btnmain2 = new JButton("멤버십 가입해서 혜택받기!");
@@ -69,17 +83,25 @@ public class Home extends JPanel{
 		btnmain4.setSize(60, 50);
 		add(btnmain4);
 		
-		JButton btnmain5 = new JButton("ORDER");
+		JButton btnmain5 = new JButton("ORDER"); // 현정
 		btnmain5.setBackground(Color.RED);
 		btnmain5.setLocation(135, 400);
 		btnmain5.setSize(75, 50);
 		add(btnmain5);
+		btnmain5.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+			}
+			
+		});
 		
 		JButton btnmain6 = new JButton("내 정보");
 		btnmain6.setBackground(Color.RED);
 		btnmain6.setLocation(212, 400);
 		btnmain6.setSize(80, 50);
 		add(btnmain6);
+		
 		
 		
 	}

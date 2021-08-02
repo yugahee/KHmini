@@ -56,16 +56,16 @@ public class MenuChoose extends JFrame{
 		
 		//커피 사진 넣기
 		JLabel label = new JLabel();
-		Image coffeeimage = new ImageIcon("image/coffee/coffee_01.jpg").getImage().getScaledInstance(90,90,0);
+		Image coffeeimage = new ImageIcon("image/coffee/coffee_01.jpg").getImage().getScaledInstance(90,100,0);
 		label.setIcon(new ImageIcon(coffeeimage));
-		label.setLocation(90, 20);
+		label.setLocation(90, 30);
 		label.setSize(100, 150);
 		panel.add(label); //*버튼 클릭 이벤트 추가해야 함
 		
 
 		//HOT/ICED text 삽입
-		JLabel text = new JLabel("HOT/ICED");
-		text.setLocation(20, 72);
+		JLabel text = new JLabel("HOT / ICED");
+		text.setLocation(20, 95);
 		text.setSize(500,150);
 		text.setFont(new Font("", Font.BOLD, 16));
 		panel.add(text);
@@ -80,16 +80,24 @@ public class MenuChoose extends JFrame{
 		sizeGroup.add(Iced);
 		
 		Hot.setSize(60, 30);
-		Hot.setLocation(60,170);
+		Hot.setLocation(60,187);
+		Hot.setBackground(Color.white);
 		Iced.setSize(60, 30);
-		Iced.setLocation(150,170);
+		Iced.setLocation(150,187);
+		Iced.setBackground(Color.white);
 		panel.add(Hot);
 		panel.add(Iced);
 		
+		//선긋기1
+		JButton line = new JButton();
+		line.setLocation(20, 221);
+		line.setSize(240, 1);
+		line.setBackground(Color.LIGHT_GRAY);
+		panel.add(line);
 		
 		//당도선택 text 삽입
 		JLabel text2 = new JLabel("당도선택");
-		text2.setLocation(20, 152);
+		text2.setLocation(20, 165);
 		text2.setSize(500,150);
 		text2.setFont(new Font("", Font.BOLD, 16));
 		panel.add(text2);
@@ -110,15 +118,20 @@ public class MenuChoose extends JFrame{
 		sizeGroup2.add(hundred);
 				
 		zero.setSize(45, 30);
-		zero.setLocation(15,250);
+		zero.setLocation(15,255);
+		zero.setBackground(Color.white);
 		thirty.setSize(48, 30);
-		thirty.setLocation(65, 250);
+		thirty.setLocation(60, 255);
+		thirty.setBackground(Color.white);
 		half.setSize(48, 30);
-		half.setLocation(115, 250);
+		half.setLocation(110, 255);
+		half.setBackground(Color.white);
 		seventy.setSize(48, 30);
-		seventy.setLocation(165, 250);
+		seventy.setLocation(160, 255);
+		seventy.setBackground(Color.white);
 		hundred.setSize(55, 30);
-		hundred.setLocation(215, 250);
+		hundred.setLocation(210, 255);
+		hundred.setBackground(Color.white);
 		
 		panel.add(zero);
 		panel.add(thirty);
@@ -127,9 +140,17 @@ public class MenuChoose extends JFrame{
 		panel.add(hundred);
 		
 		
+		//선긋기2
+		JButton line2 = new JButton();
+		line2.setLocation(20, 290);
+		line2.setSize(240, 1);
+		line2.setBackground(Color.LIGHT_GRAY);
+		panel.add(line2);
+		
+		
 		//얼음 text 삽입
 		JLabel text3 = new JLabel("얼음");
-		text3.setLocation(20, 228);
+		text3.setLocation(20, 235);
 		text3.setSize(500,150);
 		text3.setFont(new Font("", Font.BOLD, 16));
 		panel.add(text3);
@@ -145,47 +166,68 @@ public class MenuChoose extends JFrame{
 		sizeGroup2.add(full);
 				
 		less.setSize(53, 30);
-		less.setLocation(30,320);
+		less.setLocation(30,323);
+		less.setBackground(Color.white);
 		regular.setSize(70, 30);
-		regular.setLocation(100, 320);
+		regular.setLocation(100, 323);
+		regular.setBackground(Color.white);
 		full.setSize(48, 30);
-		full.setLocation(190, 320);
+		full.setLocation(190, 323);
+		full.setBackground(Color.white);
 		
 		panel.add(less);
 		panel.add(regular);
 		panel.add(full);
 	
 		
-		//하단 메뉴 삽입
-		JButton home = new JButton("HOME");
-		home.setForeground(Color.white);
-		Color a = new Color(184, 27, 46);
-		home.setBackground(a);
-		home.setLocation(1, 400);
-		home.setSize(70, 50);
-		panel.add(home);
+		//뒤로가기 버튼 삽입
+		JButton back = new JButton("Back");
+		back.setForeground(Color.white);
+		back.setLocation(20,410);
+		back.setSize(65,30);
+		Color gongcha = new Color(184, 27, 46);
+		back.setBackground(gongcha);
+		panel.add(back);
+		
+		//next 버튼 생성
+	    JButton next = new JButton("Next");
+	    next.setForeground(Color.white);
+	    next.setLocation(200,410);
+	    next.setSize(65,30);
+	    next.setBackground(gongcha);
+	   	panel.add(next);
 		
 		
-		JButton pay = new JButton("PAY");
-		pay.setForeground(Color.white);
-		pay.setBackground(a);
-		pay.setLocation(73, 400);
-		pay.setSize(60, 50);
-		panel.add(pay);
-		
-		JButton order = new JButton("ORDER");
-		order.setForeground(Color.white);
-		order.setBackground(a);
-		order.setLocation(135, 400);
-		order.setSize(75, 50);
-		panel.add(order);
-		
-		JButton my = new JButton("내 정보");
-		my.setForeground(Color.white);
-		my.setBackground(a);
-		my.setLocation(212, 400);
-		my.setSize(80, 50);
-		panel.add(my);
+//		//하단 메뉴 삽입
+//		JButton home = new JButton("HOME");
+//		home.setForeground(Color.white);
+//		Color a = new Color(184, 27, 46);
+//		home.setBackground(a);
+//		home.setLocation(1, 400);
+//		home.setSize(70, 50);
+//		panel.add(home);
+//		
+//		
+//		JButton pay = new JButton("PAY");
+//		pay.setForeground(Color.white);
+//		pay.setBackground(a);
+//		pay.setLocation(73, 400);
+//		pay.setSize(60, 50);
+//		panel.add(pay);
+//		
+//		JButton order = new JButton("ORDER");
+//		order.setForeground(Color.white);
+//		order.setBackground(a);
+//		order.setLocation(135, 400);
+//		order.setSize(75, 50);
+//		panel.add(order);
+//		
+//		JButton my = new JButton("내 정보");
+//		my.setForeground(Color.white);
+//		my.setBackground(a);
+//		my.setLocation(212, 400);
+//		my.setSize(80, 50);
+//		panel.add(my);
 	
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

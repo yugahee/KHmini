@@ -16,8 +16,6 @@ public class Controller extends JFrame{
 	JPanel home = new Home();
 	JPanel pay = new Pay();
 	
-	
-	
 	public Controller() {
 		super("Gong Cha App");
 		setBounds(500, 100, 300, 500);
@@ -43,8 +41,6 @@ public class Controller extends JFrame{
 		
 		
 		add(title);
-		
-
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

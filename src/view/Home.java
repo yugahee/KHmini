@@ -156,6 +156,7 @@ public class Home extends JPanel{
 		setBorderPainted(false);
 		setOpaque(false);
 	}
+	
 	@Override
 	protected void paintComponent(Graphics g) {
 		int width = getWidth();

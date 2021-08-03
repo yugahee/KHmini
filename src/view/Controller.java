@@ -58,6 +58,7 @@ public class Controller extends JFrame{
 			}
 		});
 		
+<<<<<<< HEAD
 
 //		 add(home);
 		
@@ -65,6 +66,19 @@ public class Controller extends JFrame{
 //		add(konkukst);
 
 //		add(title);
+=======
+<<<<<<< HEAD
+//		add(title);
+=======
+<<<<<<< HEAD
+		 add(home);
+		// add(title);
+		// add(store);
+		// add(konkukst);
+=======
+		add(title);
+>>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
+>>>>>>> 40a5a8a2959ed8b2b9cff1471a91b1a9324fa513
 //		add(new Payment());
 //		add(new Waiting());
 //		add(new Pay());
@@ -73,14 +87,23 @@ public class Controller extends JFrame{
 //		add(new Order());
 //		add(home);						//¿Ï·á
 //		add(new Coffee());
+<<<<<<< HEAD
 		add(new Coffee2());
 
+=======
+//		add(new Coffee2());
+<<<<<<< HEAD
+//		add(new MilkTea());
+//		add(new MilkTea2());
+=======
+>>>>>>> a8c64026d500b67a6a675b02b1e152902e294fab
+>>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
+>>>>>>> 40a5a8a2959ed8b2b9cff1471a91b1a9324fa513
 		
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setPreferredSize(new Dimension(300, 500));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
-		
 	}
 }

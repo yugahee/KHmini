@@ -41,7 +41,7 @@ public class Controller extends JFrame{
 		
 		
 		add(title);
-
+		
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setPreferredSize(new Dimension(300, 500));

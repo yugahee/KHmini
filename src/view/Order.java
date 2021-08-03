@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/*
 <<<<<<< HEAD
 public class Order extends JPanel{
 	public Order() {
@@ -26,6 +27,7 @@ public class Order extends JPanel{
 		add(lbmain);
 
 =======
+*/
 public class Order extends JFrame{
 
 	public Order() {
@@ -123,7 +125,6 @@ public class Order extends JFrame{
 		button5.setLocation(150, 190);
 		button6.setLocation(150, 320);
 		
->>>>>>> 0eecf54b8a8b75306fbb67980b344f428331e0f3
 
 		
 		panel.add(button1);

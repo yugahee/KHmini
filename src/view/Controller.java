@@ -47,5 +47,6 @@ public class Controller extends JFrame{
 		setPreferredSize(new Dimension(300, 500));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
+		
 	}
 }

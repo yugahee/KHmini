@@ -28,34 +28,27 @@ public class Order extends JPanel{
 
 =======
 */
-public class Order extends JFrame{
+public class Order extends JPanel{
 
 	public Order() {
-		super("주문하기");
-		this.setBounds(500, 100, 300, 500);
 		
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBackground(Color.white);
+		setLayout(null);
+		setBackground(Color.white);
 		
-		try {
-			this.setIconImage(ImageIO.read(new File("image/mainTitle.jpg")));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+
 		
 		JLabel label = new JLabel();
 		Image mainImage = new ImageIcon("image/mainTitle.jpg").getImage().getScaledInstance(40, 50,0);
 		label.setIcon(new ImageIcon(mainImage));
 		label.setLocation(5, -2);
 		label.setSize(40, 60);
-		panel.add(label);
+		add(label);
 		
 		JLabel title = new JLabel("Order");
 		title.setLocation(50, -50);
 		title.setSize(500, 150);
 		title.setFont(new Font("", Font.BOLD, 20));
-		panel.add(title);
+		add(title);
 		
 		/*
 		JLabel title1 = new JLabel("아메리카노");
@@ -127,22 +120,13 @@ public class Order extends JFrame{
 		
 
 		
-		panel.add(button1);
-		panel.add(button2);
-		panel.add(button3);
-		panel.add(button4);
-		panel.add(button5);
-		panel.add(button6);
-		
-		
-		this.add(panel);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setVisible(true);
-		
+		add(button1);
+		add(button2);
+		add(button3);
+		add(button4);
+		add(button5);
+		add(button6);
 		
 	}
-	public static void main(String[] args) {
-		new Order();
-	}
-	
+
 }

@@ -74,7 +74,7 @@ public class Waiting extends JPanel{
 		
 		btn.setBackground(Color.WHITE);
 		btn.setLocation(100, 370);
-		btn.setSize(90, 40);
+		btn.setSize(0, 40);
 		add(btn);
 	}
 }

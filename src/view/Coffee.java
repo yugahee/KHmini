@@ -11,6 +11,8 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
 
 import roundedButton.RoundedButton;
 
@@ -176,7 +178,7 @@ public class Coffee extends JPanel {
 		//뒤로가기 버튼 삽입
 		JButton back = new RoundedButton("Back");
 		back.setForeground(Color.white);
-		back.setLocation(20,410);
+		back.setLocation(20,415);
 		back.setSize(65,30);
 		Color gongcha = new Color(184, 27, 46);
 		back.setBackground(gongcha);
@@ -185,10 +187,15 @@ public class Coffee extends JPanel {
 		//next 버튼 생성
 	    JButton next = new RoundedButton("Next");
 	    next.setForeground(Color.white);
-	    next.setLocation(200,410);
+	    next.setLocation(210,415);
 	    next.setSize(65,30);
 	    next.setBackground(gongcha);
 	   	add(next);
+	   	
+		
+
+	
+
 		
 		
 //		//하단 메뉴 삽입

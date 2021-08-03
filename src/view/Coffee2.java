@@ -146,7 +146,7 @@ public class Coffee2 extends JPanel {
 
 		// 수량 text 생성
 		JLabel quantity = new JLabel("수량");
-		quantity.setLocation(100, 315);
+		quantity.setLocation(100, 310);
 		quantity.setSize(500, 150);
 //	quantity.setFont(new Font("", Font.BOLD, 16));
 		add(quantity);
@@ -154,13 +154,13 @@ public class Coffee2 extends JPanel {
 		// 수량 spinner 생성
 		SpinnerNumberModel numberModel = new SpinnerNumberModel(1, 0, 100, 1);
 		JSpinner spinner = new JSpinner(numberModel);
-		spinner.setLocation(135, 375);
+		spinner.setLocation(135, 370);
 		spinner.setSize(55, 30);
 		add(spinner);
 
 		// 가격 text 생성
 		JLabel price = new JLabel(Controller.order+"원");
-		price.setLocation(205, 315);
+		price.setLocation(205, 310);
 		price.setSize(500, 150);
 		price.setFont(new Font("", Font.BOLD, 16));
 		add(price);
@@ -168,7 +168,7 @@ public class Coffee2 extends JPanel {
 		// 뒤로가기 버튼 생성
 		JButton back = new RoundedButton("Back");
 		back.setForeground(Color.white);
-		back.setLocation(20, 415);
+		back.setLocation(20, 410);
 		back.setSize(65, 30);
 		Color gongcha = new Color(184, 27, 46);
 		back.setBackground(gongcha);
@@ -177,7 +177,7 @@ public class Coffee2 extends JPanel {
 		// 장바구니 버튼 생성
 		JButton choose = new RoundedButton("장바구니");
 		choose.setForeground(Color.white);
-		choose.setLocation(210, 415);
+		choose.setLocation(180, 410);
 		choose.setSize(65, 30);
 		choose.setBackground(gongcha);
 		add(choose);

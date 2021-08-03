@@ -39,9 +39,9 @@ public class Shopping extends JPanel {
 		//매장 검색 버튼 생성
 		String text = "주문할 매장을 선택해 주세요";
 		JButton button = new JButton(text);
-		button.setFont(new Font("", Font.BOLD, 15));
-		button.setSize(270, 33);
-		button.setLocation(12, 65);
+		button.setFont(new Font("", Font.BOLD, 14));
+		button.setSize(240, 33);
+		button.setLocation(26, 65);
 		Color gongcha = new Color(184, 27, 46);
 		button.setBackground(new Color(240,240,240));
 		add(button);

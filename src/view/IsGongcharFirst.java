@@ -45,8 +45,7 @@ public class IsGongcharFirst{
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if (e.getButton() == MouseEvent.BUTTON1) {
-					// frame.setVisible(false);
-					// dd
+					frame.setVisible(false);
 				}}
 		});
 		

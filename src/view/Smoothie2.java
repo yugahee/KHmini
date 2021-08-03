@@ -14,9 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
-public class MilkTea2 extends JPanel {
+public class Smoothie2 extends JPanel {
 	
-	public MilkTea2() {
+	public Smoothie2() {
 
 		//메인 panel 생성 
 		setLayout(null);
@@ -30,26 +30,26 @@ public class MilkTea2 extends JPanel {
 		lbmain.setSize(40, 60);
 		add(lbmain);
 
-		// MilkTea title 생성
-		JLabel title = new JLabel("MilkTea");
-		title.setLocation(80, -50);
+		// Smoothie title 생성
+		JLabel title = new JLabel("Smoothie");
+		title.setLocation(64, -50);
 		title.setSize(500, 150);
 		title.setFont(new Font("", Font.BOLD, 20));
 		add(title);
 
 		// 메뉴 목록 생성
-		String[] MilkTeas = {"블랙 밀크티", "타로 밀크티"};
-		JComboBox<String> MilkTeaList = new JComboBox(MilkTeas);
-		MilkTeaList.setBackground(Color.white);
-		MilkTeaList.setSelectedIndex(0);
-		MilkTeaList.setLocation(160, 10);
-		MilkTeaList.setSize(100, 30);
-		add(MilkTeaList);
+		String[] Smoothies = {"망고 스무디", "딸기 스무디"};
+		JComboBox<String> SmoothieList = new JComboBox(Smoothies);
+		SmoothieList.setBackground(Color.white);
+		SmoothieList.setSelectedIndex(0);
+		SmoothieList.setLocation(160, 10);
+		SmoothieList.setSize(100, 30);
+		add(SmoothieList);
 		
 		//밀크티 사진 생성
 		JLabel label = new JLabel();
-		Image MilkTeaimage = new ImageIcon("image/MilkTea/MilkTea_01.jpg").getImage().getScaledInstance(90,100,0);
-		label.setIcon(new ImageIcon(MilkTeaimage));
+		Image Smoothieimage = new ImageIcon("image/Smoothie/Smoothie_01.png").getImage().getScaledInstance(90,100,0);
+		label.setIcon(new ImageIcon(Smoothieimage));
 		label.setLocation(90, 30);
 		label.setSize(100, 150);
 		add(label); // *버튼 클릭 이벤트 추가해야 함

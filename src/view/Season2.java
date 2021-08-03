@@ -14,9 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
-public class MilkTea2 extends JPanel {
+public class Season2 extends JPanel {
 	
-	public MilkTea2() {
+	public Season2() {
 
 		//메인 panel 생성 
 		setLayout(null);
@@ -30,26 +30,26 @@ public class MilkTea2 extends JPanel {
 		lbmain.setSize(40, 60);
 		add(lbmain);
 
-		// MilkTea title 생성
-		JLabel title = new JLabel("MilkTea");
-		title.setLocation(80, -50);
+		// Season title 생성
+		JLabel title = new JLabel("Season");
+		title.setLocation(74, -50);
 		title.setSize(500, 150);
 		title.setFont(new Font("", Font.BOLD, 20));
 		add(title);
 
 		// 메뉴 목록 생성
-		String[] MilkTeas = {"블랙 밀크티", "타로 밀크티"};
-		JComboBox<String> MilkTeaList = new JComboBox(MilkTeas);
-		MilkTeaList.setBackground(Color.white);
-		MilkTeaList.setSelectedIndex(0);
-		MilkTeaList.setLocation(160, 10);
-		MilkTeaList.setSize(100, 30);
-		add(MilkTeaList);
+		String[] Seasons = {"민트 초코 라떼", "민트 초코 스무디"};
+		JComboBox<String> SeasonList = new JComboBox(Seasons);
+		SeasonList.setBackground(Color.white);
+		SeasonList.setSelectedIndex(0);
+		SeasonList.setLocation(160, 10);
+		SeasonList.setSize(120, 30);
+		add(SeasonList);
 		
-		//밀크티 사진 생성
+		//Season 사진 생성
 		JLabel label = new JLabel();
-		Image MilkTeaimage = new ImageIcon("image/MilkTea/MilkTea_01.jpg").getImage().getScaledInstance(90,100,0);
-		label.setIcon(new ImageIcon(MilkTeaimage));
+		Image Seasonimage = new ImageIcon("image/Season/Season_01.png").getImage().getScaledInstance(90,100,0);
+		label.setIcon(new ImageIcon(Seasonimage));
 		label.setLocation(90, 30);
 		label.setSize(100, 150);
 		add(label); // *버튼 클릭 이벤트 추가해야 함

@@ -41,6 +41,7 @@ public class Controller extends JFrame{
 		
 		
 		add(title);
+		add(new Join());
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

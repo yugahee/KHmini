@@ -39,7 +39,7 @@ public class Controller extends JFrame{
 			}
 		});
 		
-		
+		//add(new Order());
 		add(title);
 		
 		setResizable(false);

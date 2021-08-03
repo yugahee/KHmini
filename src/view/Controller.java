@@ -54,17 +54,18 @@ public class Controller extends JFrame{
 			}
 		});
 		
-		add(title);
+//		add(title);
 //		add(new Payment());
 //		add(new Waiting());
 //		add(new Pay());
 //		add(new IsGongcharFirst());		//완료
 //		add(new Mypage());
-//		add(new MenuChoose());
 //		add(new Order());
 //		add(home);						//완료
 //		add(new Coffee());
 //		add(new Coffee2());
+//		add(new MilkTea());
+//		add(new MilkTea2());
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

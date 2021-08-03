@@ -99,8 +99,7 @@ public class Join extends JPanel {
 		
 		joinBt.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				
-				
+			// ChangePanel.changePanel(Controller, this, new JoinComplete());
 				
 				
 				
@@ -113,8 +112,5 @@ public class Join extends JPanel {
 				// 버튼 활성화 + 화면 전환 시키기
 			}
 		});
-	}
-	public static void main(String[] args) {
-		new Join();
 	}
 }

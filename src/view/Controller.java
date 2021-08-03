@@ -14,14 +14,29 @@ public class Controller extends JFrame{
 	
 	JPanel title = new Title();
 	JPanel home = new Home();
-	JPanel pay = new Pay();
+	
+	public static int money = 50000;		// 현재 잔액
+	public static int point = 0;			// 현재 포인트
+	public static int pointpay = 0;			// 사용 할 포인트
+	public static int order = 0;			// 주문금액
+	public static int order2 = 0;			// 할인 후 총 결제 금액
+	public static String[] coffeMenu = {"아메리카노", "카페라떼", "바닐라 카페라떼",
+										"블랙밀크티", "타로 밀크티", "초콜렛 밀크티", "제주 그린 밀크티",
+										"망고스무디", "제주 그린티 스무디", "청포도 스무디", "초코 쿠앤크 스무디",
+										"자스민 그린티", "우롱티",
+										"치즈 케이크"};
+	public static int[] coffePrice = {3500, 4000, 4500, 4500,
+									4000, 4000, 4000, 4700,
+									5300, 5300, 4800, 4500,
+									3500, 3500,
+									5700};
+	
+	
 	
 	public Controller() {
 		super("Gong Cha App");
 		setBounds(500, 100, 300, 500);
-		
-		int money = 50000;
-		String format = String.format("%,d", money);
+
 		
 		try {
 			setIconImage(ImageIO.read(new File("image/Title.jpg")));
@@ -39,9 +54,18 @@ public class Controller extends JFrame{
 			}
 		});
 		
-		
 		add(title);
 		add(new Join());
+//		add(new Payment());
+//		add(new Waiting());
+//		add(new Pay());
+//		add(new IsGongcharFirst());		//완료
+//		add(new Mypage());
+//		add(new MenuChoose());
+//		add(new Order());
+//		add(home);						//완료
+//		add(new Coffee());
+//		add(new Coffee2());
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

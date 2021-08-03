@@ -15,19 +15,22 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-public class MenuChoose extends JFrame{
+public class Coffee extends JFrame{
 	
-	public MenuChoose() {
+	private Controller menu;
+	private Coffee coffee;
 	
-		this.setBounds(500, 100, 300, 500);
+	Coffee() {
+	
+		//this.setBounds(500, 100, 300, 500);
 		
-		//메인 panel 만들기 
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBackground(Color.WHITE);
-		panel.setLocation(500, 100);
-		panel.setSize(300, 500);
-		this.add(panel);
+//		//메인 panel 만들기 
+//		JPanel panel = new JPanel();
+		 setLayout(null);
+		 setBackground(Color.WHITE);
+//		 setLocation(500, 100);
+//		 setSize(300, 500);
+//		this.add(panel);
 		
 		//공차 메인 로고 넣기
 		JLabel lbmain = new JLabel();
@@ -35,14 +38,14 @@ public class MenuChoose extends JFrame{
 		lbmain.setIcon(new ImageIcon(mainImage));
 		lbmain.setLocation(5, -2);
 		lbmain.setSize(40, 60);
-		panel.add(lbmain);
+		add(lbmain);
 		
 		//Coffee title 삽입
 		JLabel title = new JLabel("Coffee");
 		title.setLocation(80, -50);
 		title.setSize(500,150);
 		title.setFont(new Font("", Font.BOLD, 20));
-		panel.add(title);
+		 add(title);
 		
 		
 		//메뉴 목록 넣기
@@ -51,7 +54,7 @@ public class MenuChoose extends JFrame{
 		coffeeList.setSelectedIndex(0);
 		coffeeList.setLocation(160, 10);
 		coffeeList.setSize(100, 30);
-		panel.add(coffeeList);
+		 add(coffeeList);
 		
 		
 		//커피 사진 넣기
@@ -60,7 +63,7 @@ public class MenuChoose extends JFrame{
 		label.setIcon(new ImageIcon(coffeeimage));
 		label.setLocation(90, 30);
 		label.setSize(100, 150);
-		panel.add(label); //*버튼 클릭 이벤트 추가해야 함
+		 add(label); //*버튼 클릭 이벤트 추가해야 함
 		
 
 		//HOT/ICED text 삽입
@@ -68,7 +71,7 @@ public class MenuChoose extends JFrame{
 		text.setLocation(20, 95);
 		text.setSize(500,150);
 		text.setFont(new Font("", Font.BOLD, 16));
-		panel.add(text);
+		 add(text);
 		
 		
 		//HOT/ICED 라디오 버튼 삽입
@@ -85,22 +88,22 @@ public class MenuChoose extends JFrame{
 		Iced.setSize(60, 30);
 		Iced.setLocation(150,187);
 		Iced.setBackground(Color.white);
-		panel.add(Hot);
-		panel.add(Iced);
+		 add(Hot);
+		 add(Iced);
 		
 		//선긋기1
 		JButton line = new JButton();
 		line.setLocation(20, 221);
 		line.setSize(240, 1);
 		line.setBackground(Color.LIGHT_GRAY);
-		panel.add(line);
+		 add(line);
 		
 		//당도선택 text 삽입
 		JLabel text2 = new JLabel("당도선택");
 		text2.setLocation(20, 165);
 		text2.setSize(500,150);
 		text2.setFont(new Font("", Font.BOLD, 16));
-		panel.add(text2);
+		 add(text2);
 		
 		
 		//당도선택 라디오 버튼 삽입
@@ -133,11 +136,11 @@ public class MenuChoose extends JFrame{
 		hundred.setLocation(210, 255);
 		hundred.setBackground(Color.white);
 		
-		panel.add(zero);
-		panel.add(thirty);
-		panel.add(half);
-		panel.add(seventy);
-		panel.add(hundred);
+		 add(zero);
+		 add(thirty);
+		 add(half);
+		 add(seventy);
+		 add(hundred);
 		
 		
 		//선긋기2
@@ -145,7 +148,7 @@ public class MenuChoose extends JFrame{
 		line2.setLocation(20, 290);
 		line2.setSize(240, 1);
 		line2.setBackground(Color.LIGHT_GRAY);
-		panel.add(line2);
+		 add(line2);
 		
 		
 		//얼음 text 삽입
@@ -153,7 +156,7 @@ public class MenuChoose extends JFrame{
 		text3.setLocation(20, 235);
 		text3.setSize(500,150);
 		text3.setFont(new Font("", Font.BOLD, 16));
-		panel.add(text3);
+		 add(text3);
 		
 		//얼음 라디오버튼
 		JRadioButton less = new JRadioButton("Less");
@@ -175,9 +178,9 @@ public class MenuChoose extends JFrame{
 		full.setLocation(190, 323);
 		full.setBackground(Color.white);
 		
-		panel.add(less);
-		panel.add(regular);
-		panel.add(full);
+		 add(less);
+		 add(regular);
+		 add(full);
 	
 		
 		//뒤로가기 버튼 삽입
@@ -187,7 +190,7 @@ public class MenuChoose extends JFrame{
 		back.setSize(65,30);
 		Color gongcha = new Color(184, 27, 46);
 		back.setBackground(gongcha);
-		panel.add(back);
+		 add(back);
 		
 		//next 버튼 생성
 	    JButton next = new JButton("Next");
@@ -195,7 +198,7 @@ public class MenuChoose extends JFrame{
 	    next.setLocation(200,410);
 	    next.setSize(65,30);
 	    next.setBackground(gongcha);
-	   	panel.add(next);
+	   	 add(next);
 		
 		
 //		//하단 메뉴 삽입
@@ -205,7 +208,7 @@ public class MenuChoose extends JFrame{
 //		home.setBackground(a);
 //		home.setLocation(1, 400);
 //		home.setSize(70, 50);
-//		panel.add(home);
+//		 add(home);
 //		
 //		
 //		JButton pay = new JButton("PAY");
@@ -213,30 +216,30 @@ public class MenuChoose extends JFrame{
 //		pay.setBackground(a);
 //		pay.setLocation(73, 400);
 //		pay.setSize(60, 50);
-//		panel.add(pay);
+//		 add(pay);
 //		
 //		JButton order = new JButton("ORDER");
 //		order.setForeground(Color.white);
 //		order.setBackground(a);
 //		order.setLocation(135, 400);
 //		order.setSize(75, 50);
-//		panel.add(order);
+//		 add(order);
 //		
 //		JButton my = new JButton("내 정보");
 //		my.setForeground(Color.white);
 //		my.setBackground(a);
 //		my.setLocation(212, 400);
 //		my.setSize(80, 50);
-//		panel.add(my);
+//		 add(my);
 	
 		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setVisible(true);
+//		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		this.setVisible(true);
 		
 	}
 	
 	public static void main(String[] args) {
-		new MenuChoose();
+		new Coffee();
 	}
 
 }

@@ -14,9 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
-public class MenuChoose2 extends JFrame {
+public class Coffee2 extends JFrame {
 	
-	public MenuChoose2() {
+	public Coffee2() {
 	
 	this.setBounds(500, 100, 300, 500);
 	
@@ -203,7 +203,7 @@ public class MenuChoose2 extends JFrame {
 	
 }
 	public static void main(String[] args) {
-		new MenuChoose2();
+		new Coffee2();
 		
 	}
 }

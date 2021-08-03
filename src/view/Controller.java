@@ -15,6 +15,7 @@ public class Controller extends JFrame{
 	JPanel title = new Title();
 	JPanel home = new Home();
 	JPanel pay = new Pay();
+	JPanel coffee = new Coffee();
 	
 	
 	
@@ -43,7 +44,7 @@ public class Controller extends JFrame{
 		
 		
 		add(title);
-		
+		add(new Coffee());
 
 		
 		setResizable(false);

@@ -56,6 +56,7 @@ public class Home extends JPanel{
 		// JLabel firstlb = new JLabel();
 		// btnmain1.add(firstlb);
 		// btnmain1.setIcon(firstimg);
+		// dd
 		btnmain1.setLocation(20, 80);
 		btnmain1.setSize(250, 60);
 		btnmain1.addMouseListener(new MouseAdapter() {

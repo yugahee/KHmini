@@ -14,17 +14,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class IsGongcharFirst extends JPanel{
+public class IsGongcharFirst{
 	
 	public IsGongcharFirst() {
-<<<<<<< HEAD
+
 		JFrame frame = new JFrame("공차가 처음이신가요?");
-		setBackground(Color.white);
-=======
-		JFrame frame = new JFrame("HOW TO ORDER");
-		JPanel panel = new JPanel();
-		panel.setBackground(Color.white);
->>>>>>> 0eecf54b8a8b75306fbb67980b344f428331e0f3
+		frame.setBackground(Color.white);
+
 		
 		try {
 			frame.setIconImage(ImageIO.read(new File("image/mainTitle.jpg")));
@@ -40,8 +36,8 @@ public class IsGongcharFirst extends JPanel{
 		Image img = new ImageIcon("image/isgongcharfirst.png").getImage();
 		label.setIcon(new ImageIcon(img));
 
-		add(label);
-		frame.add(this);
+		frame.add(label);
+		//frame.add(this);
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);

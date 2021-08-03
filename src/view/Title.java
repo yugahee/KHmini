@@ -11,7 +11,7 @@ public class Title extends JPanel{
 	
 	Title(){
 		setBackground(Color.WHITE);
-		ImageIcon titleImage = new ImageIcon("image/Title.jpg");
+		ImageIcon titleImage = new ImageIcon("image/orderimg/gongchar.png");
 		add(new JLabel(titleImage));
 	}
 }

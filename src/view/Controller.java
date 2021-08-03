@@ -14,6 +14,11 @@ public class Controller extends JFrame{
 	
 	JPanel title = new Title();
 	JPanel home = new Home();
+<<<<<<< HEAD
+	JPanel pay = new Pay();
+	JPanel store = new Store();
+	JPanel konkukst = new KonkukSt();
+=======
 	
 	public static int money = 50000;		// 현재 잔액
 	public static int point = 0;			// 현재 포인트
@@ -32,6 +37,7 @@ public class Controller extends JFrame{
 									5700};
 	
 	
+>>>>>>> a8c64026d500b67a6a675b02b1e152902e294fab
 	
 	public Controller() {
 		super("Gong Cha App");
@@ -54,7 +60,17 @@ public class Controller extends JFrame{
 			}
 		});
 		
+<<<<<<< HEAD
 //		add(title);
+=======
+<<<<<<< HEAD
+		 add(home);
+		// add(title);
+		// add(store);
+		// add(konkukst);
+=======
+		add(title);
+>>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
 //		add(new Payment());
 //		add(new Waiting());
 //		add(new Pay());
@@ -64,8 +80,12 @@ public class Controller extends JFrame{
 //		add(home);						//완료
 //		add(new Coffee());
 //		add(new Coffee2());
+<<<<<<< HEAD
 //		add(new MilkTea());
 //		add(new MilkTea2());
+=======
+>>>>>>> a8c64026d500b67a6a675b02b1e152902e294fab
+>>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
 		
 		setResizable(false);
 		setLocationRelativeTo(null);

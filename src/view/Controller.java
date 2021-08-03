@@ -41,7 +41,6 @@ public class Controller extends JFrame{
 		
 		
 		add(title);
-		add(new Coffee());
 
 		setResizable(false);
 		setLocationRelativeTo(null);

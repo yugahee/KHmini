@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import roundedButton.RoundedButton;
+
 public class Pay extends JPanel {
 	int money = 50000;
 	String format = String.format("%,d", money);
@@ -58,20 +60,27 @@ public class Pay extends JPanel {
 		lpay2.setSize(40, 60);
 		add(lpay2);
 
-		JButton payButton1 = new JButton("Home");
+		JButton payButton1 = new RoundedButton("Home");
+		payButton1.setBackground(new Color(180,45,60));
+		payButton1.setForeground(Color.white);
 		payButton1.setLocation(180, 5);
 		payButton1.setSize(100, 50);
 		add(payButton1);
 
-		JButton btnpay1 = new JButton("결제 내역 확인");
+		JButton btnpay1 = new RoundedButton("결제 내역 확인");
+		btnpay1.setBackground(new Color(180,45,60));
+		btnpay1.setForeground(Color.white);
 		btnpay1.setLocation(75, 320);
 		btnpay1.setSize(150, 50);
 		add(btnpay1);
 
-		JButton btnpay2 = new JButton("충전 하기");
+		JButton btnpay2 = new RoundedButton("충전 하기");
+		btnpay2.setBackground(new Color(180,45,60));
+		btnpay2.setForeground(Color.white);
 		btnpay2.setLocation(75, 380);
 		btnpay2.setSize(150, 50);
 		add(btnpay2);
 
 	}
+	
 }

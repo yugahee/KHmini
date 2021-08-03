@@ -8,6 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import roundedButton.RoundedButton;
+
 public class Store extends JPanel {
 	
 	Store(){
@@ -26,7 +28,9 @@ public class Store extends JPanel {
 		jf.setSize(200, 30);
 		add(jf);
 		
-		JButton payButton1 = new JButton("찾기");
+		JButton payButton1 = new RoundedButton("찾기");
+		payButton1.setBackground(new Color(180,45,60));
+		payButton1.setForeground(Color.white);
 		payButton1.setLocation(220, 60);
 		payButton1.setSize(60, 30);
 		add(payButton1);
@@ -34,5 +38,7 @@ public class Store extends JPanel {
 		
 		
 	}
+	
+
 	
 }

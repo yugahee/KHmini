@@ -2,15 +2,24 @@ package view;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Rectangle;
+import java.awt.RenderingHints;
 import java.awt.TextArea;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.Action;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import roundedButton.RoundedButton;
 
 public class Payment extends JPanel {
 
@@ -101,14 +110,16 @@ public class Payment extends JPanel {
 		ta2.append("할인 금액 (" + Controller.pointpay + "원)\n");
 		ta2.append("최종 결제 금액 (" + (Controller.order - Controller.pointpay) + "원)");
 		add(ta2);
-		btn[0] = new JButton("포인트 사용");
-		btn[0].setBackground(Color.red);
+		btn[0] = new RoundedButton("포인트 사용");
+		btn[0].setBackground(new Color(180,45,60));
+		btn[0].setForeground(Color.white);
 		btn[0].setLocation(160, 280);
 		btn[0].setSize(130, 40);
 		add(btn[0]);
 
-		btn[1] = new JButton(Controller.order + "원 결제하기");
-		btn[1].setBackground(Color.red);
+		btn[1] = new RoundedButton(Controller.order + "원 결제하기");
+		btn[1].setBackground(new Color(180,45,60));
+		btn[1].setForeground(Color.white);
 		btn[1].setLocation(20, 350);
 		btn[1].setSize(250, 30);
 		add(btn[1]);
@@ -130,4 +141,5 @@ public class Payment extends JPanel {
 		});
 
 	}
+
 }

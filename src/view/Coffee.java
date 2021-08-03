@@ -3,17 +3,16 @@ package view;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+
+import roundedButton.RoundedButton;
 
 public class Coffee extends JPanel {
 	
@@ -175,7 +174,7 @@ public class Coffee extends JPanel {
 	
 		
 		//뒤로가기 버튼 삽입
-		JButton back = new JButton("Back");
+		JButton back = new RoundedButton("Back");
 		back.setForeground(Color.white);
 		back.setLocation(20,410);
 		back.setSize(65,30);
@@ -184,7 +183,7 @@ public class Coffee extends JPanel {
 		add(back);
 		
 		//next 버튼 생성
-	    JButton next = new JButton("Next");
+	    JButton next = new RoundedButton("Next");
 	    next.setForeground(Color.white);
 	    next.setLocation(200,410);
 	    next.setSize(65,30);

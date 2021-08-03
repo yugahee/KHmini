@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
+import roundedButton.RoundedButton;
+
 public class Season extends JPanel {
 	
 	public Season() {
@@ -171,23 +173,22 @@ public class Season extends JPanel {
 		add(full);
 	
 		
-		//뒤로가기 버튼 생성
-		JButton back = new JButton("Back");
-		back.setForeground(Color.white);
-		back.setLocation(20,410);
-		back.setSize(65,30);
-		Color gongcha = new Color(184, 27, 46);
-		back.setBackground(gongcha);
-		add(back);
-		
-		//next 버튼 생성
-	    JButton next = new JButton("Next");
-	    next.setForeground(Color.white);
-	    next.setLocation(200,410);
-	    next.setSize(65,30);
-	    next.setBackground(gongcha);
-	   	add(next);
-		
+		//뒤로가기 버튼 삽입
+				JButton back = new RoundedButton("Back");
+				back.setForeground(Color.white);
+				back.setLocation(20,415);
+				back.setSize(65,30);
+				Color gongcha = new Color(184, 27, 46);
+				back.setBackground(gongcha);
+				add(back);
+				
+				//next 버튼 생성
+			    JButton next = new RoundedButton("Next");
+			    next.setForeground(Color.white);
+			    next.setLocation(210,415);
+			    next.setSize(65,30);
+			    next.setBackground(gongcha);
+			   	add(next);
 		
 //		//하단 메뉴 생성
 //		JButton home = new JButton("HOME");

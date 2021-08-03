@@ -12,11 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-import roundedButton.RoundedButton;
-
-public class Coffee extends JPanel {
+public class MilkTea extends JPanel {
 	
-	public Coffee() {
+	public MilkTea() {
 
 		//메인 panel 만들기 
 		setLayout(null);
@@ -30,8 +28,8 @@ public class Coffee extends JPanel {
 		lbmain.setSize(40, 60);
 		add(lbmain);
 		
-		//Coffee title 삽입
-		JLabel title = new JLabel("Coffee");
+		//MilkTea title 삽입
+		JLabel title = new JLabel("MilkTea");
 		title.setLocation(80, -50);
 		title.setSize(500,150);
 		title.setFont(new Font("", Font.BOLD, 20));
@@ -39,18 +37,18 @@ public class Coffee extends JPanel {
 		
 		
 		//메뉴 목록 넣기
-		String[] coffees = {"아메리카노", "카페라떼", "바닐라라떼"};
-		JComboBox<String> coffeeList = new JComboBox(coffees);
-		coffeeList.setSelectedIndex(0);
-		coffeeList.setLocation(160, 10);
-		coffeeList.setSize(100, 30);
-		add(coffeeList);
+		String[] MilkTeas = {"블랙 밀크티", "타로 밀크티"};
+		JComboBox<String> MilkTeaList = new JComboBox(MilkTeas);
+		MilkTeaList.setSelectedIndex(0);
+		MilkTeaList.setLocation(160, 10);
+		MilkTeaList.setSize(100, 30);
+		add(MilkTeaList);
 		
 		
 		//커피 사진 넣기
 		JLabel label = new JLabel();
-		Image coffeeimage = new ImageIcon("image/coffee/coffee_01.jpg").getImage().getScaledInstance(90,100,0);
-		label.setIcon(new ImageIcon(coffeeimage));
+		Image MilkTeaimage = new ImageIcon("image/MilkTea/MilkTea_01.jpg").getImage().getScaledInstance(90,100,0);
+		label.setIcon(new ImageIcon(MilkTeaimage));
 		label.setLocation(90, 30);
 		label.setSize(100, 150);
 		add(label); //*버튼 클릭 이벤트 추가해야 함
@@ -174,7 +172,7 @@ public class Coffee extends JPanel {
 	
 		
 		//뒤로가기 버튼 삽입
-		JButton back = new RoundedButton("Back");
+		JButton back = new JButton("Back");
 		back.setForeground(Color.white);
 		back.setLocation(20,410);
 		back.setSize(65,30);
@@ -183,7 +181,7 @@ public class Coffee extends JPanel {
 		add(back);
 		
 		//next 버튼 생성
-	    JButton next = new RoundedButton("Next");
+	    JButton next = new JButton("Next");
 	    next.setForeground(Color.white);
 	    next.setLocation(200,410);
 	    next.setSize(65,30);

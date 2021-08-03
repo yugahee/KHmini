@@ -8,11 +8,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+
+import roundedButton.RoundedButton;
 
 public class Coffee2 extends JPanel {
 	
@@ -165,7 +166,7 @@ public class Coffee2 extends JPanel {
 		add(price);
 
 		// 뒤로가기 버튼 생성
-		JButton back = new JButton("Back");
+		JButton back = new RoundedButton("Back");
 		back.setForeground(Color.white);
 		back.setLocation(20, 410);
 		back.setSize(65, 30);
@@ -174,10 +175,10 @@ public class Coffee2 extends JPanel {
 		add(back);
 
 		// 장바구니 버튼 생성
-		JButton choose = new JButton("장바구니");
+		JButton choose = new RoundedButton("장바구니");
 		choose.setForeground(Color.white);
 		choose.setLocation(180, 410);
-		choose.setSize(86, 30);
+		choose.setSize(65, 30);
 		choose.setBackground(gongcha);
 		add(choose);
 

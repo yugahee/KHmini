@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import roundedButton.RoundedButton;
+
 public class Mypage extends JPanel{
 	public Mypage() {
 
@@ -56,13 +58,17 @@ public class Mypage extends JPanel{
 		add(point);
 		
 		// 회원정보변경 버튼
-		JButton infoChangeBtn = new JButton("회원정보변경");
+		JButton infoChangeBtn = new RoundedButton("회원정보변경");
+		infoChangeBtn.setBackground(new Color(180,45,60));
+		infoChangeBtn.setForeground(Color.white);
 		infoChangeBtn.setSize(200, 50);
 		infoChangeBtn.setLocation(40, 280);
 		add(infoChangeBtn);
 		
 		// 회사 소개 버튼
-		JButton companyBtn = new JButton("회사소개");
+		JButton companyBtn = new RoundedButton("회사소개");
+		companyBtn.setBackground(new Color(180,45,60));
+		companyBtn.setForeground(Color.white);
 		companyBtn.setSize(200, 50);
 		companyBtn.setLocation(40, 350);
 		add(companyBtn);

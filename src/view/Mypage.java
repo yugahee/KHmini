@@ -3,10 +3,18 @@ package view;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+<<<<<<< HEAD
+=======
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+>>>>>>> 0eecf54b8a8b75306fbb67980b344f428331e0f3
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class Mypage extends JPanel{
@@ -68,7 +76,32 @@ public class Mypage extends JPanel{
 		add(companyBtn);
 		
 		//패널 결합		
+<<<<<<< HEAD
 
+=======
+		this.add(mypageContants, "Center");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+		
+		// 회원정보변경 버튼 이벤트
+		JDialog dialog = new JDialog(this, "닉네임 변경");
+		infoChangeBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String result = JOptionPane.showInputDialog("변경하실 닉네임을 입력해주세요.");
+				if(!(result.equals(""))) {
+					name.setText(result);					
+				}
+			}
+			
+		});
+				
+	}
+	
+	public static void main(String[] args) {
+		new Mypage();
+>>>>>>> 0eecf54b8a8b75306fbb67980b344f428331e0f3
 	}
 
 }

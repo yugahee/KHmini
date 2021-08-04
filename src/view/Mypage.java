@@ -16,7 +16,7 @@ public class Mypage extends JPanel{
  
 		// 내정보 패널 생성
 		setLayout(null);
-		setBackground(Color.white);
+		setBackground(Color.white); 
 		
 		// 헤더 요소 추가
 		// 이미지 아이콘 추가

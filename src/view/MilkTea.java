@@ -18,11 +18,11 @@ public class MilkTea extends JPanel {
 	
 	public MilkTea() {
 
-		//메인 panel 생성 
+		//메인 panel 만들기 
 		setLayout(null);
 		setBackground(Color.WHITE);
 
-		//공차 메인 로고 생성
+		//공차 메인 로고 넣기
 		JLabel lbmain = new JLabel();
 		Image mainImage = new ImageIcon("image/mainTitle.jpg").getImage().getScaledInstance(40, 50,0);
 		lbmain.setIcon(new ImageIcon(mainImage));
@@ -30,7 +30,7 @@ public class MilkTea extends JPanel {
 		lbmain.setSize(40, 60);
 		add(lbmain);
 		
-		//MilkTea title 생성
+		//MilkTea title 삽입
 		JLabel title = new JLabel("MilkTea");
 		title.setLocation(80, -50);
 		title.setSize(500,150);
@@ -38,7 +38,7 @@ public class MilkTea extends JPanel {
 		add(title);
 		
 		
-		//메뉴 목록 생성
+		//메뉴 목록 넣기
 		String[] MilkTeas = {"블랙 밀크티", "타로 밀크티"};
 		JComboBox<String> MilkTeaList = new JComboBox(MilkTeas);
 		MilkTeaList.setSelectedIndex(0);
@@ -47,7 +47,7 @@ public class MilkTea extends JPanel {
 		add(MilkTeaList);
 		
 		
-		//밀크티 사진 생성
+		//커피 사진 넣기
 		JLabel label = new JLabel();
 		Image MilkTeaimage = new ImageIcon("image/MilkTea/MilkTea_01.jpg").getImage().getScaledInstance(90,100,0);
 		label.setIcon(new ImageIcon(MilkTeaimage));
@@ -56,7 +56,7 @@ public class MilkTea extends JPanel {
 		add(label); //*버튼 클릭 이벤트 추가해야 함
 		
 
-		//HOT/ICED text 생성
+		//HOT/ICED text 삽입
 		JLabel text = new JLabel("HOT / ICED");
 		text.setLocation(20, 95);
 		text.setSize(500,150);
@@ -64,7 +64,7 @@ public class MilkTea extends JPanel {
 		add(text);
 		
 		
-		//HOT/ICED 라디오 버튼 생성
+		//HOT/ICED 라디오 버튼 삽입
 		JRadioButton Hot = new JRadioButton("HOT");
 		JRadioButton Iced = new JRadioButton("ICED");
 		
@@ -88,7 +88,7 @@ public class MilkTea extends JPanel {
 		line.setBackground(Color.LIGHT_GRAY);
 		add(line);
 		
-		//당도선택 text 생성
+		//당도선택 text 삽입
 		JLabel text2 = new JLabel("당도선택");
 		text2.setLocation(20, 165);
 		text2.setSize(500,150);
@@ -96,7 +96,7 @@ public class MilkTea extends JPanel {
 		add(text2);
 		
 		
-		//당도선택 라디오 버튼 생성
+		//당도선택 라디오 버튼 삽입
 		JRadioButton zero = new JRadioButton("0%");
 		JRadioButton thirty = new JRadioButton("30%");
 		JRadioButton half = new JRadioButton("50%");
@@ -141,14 +141,14 @@ public class MilkTea extends JPanel {
 		add(line2);
 		
 		
-		//얼음 text 생성
+		//얼음 text 삽입
 		JLabel text3 = new JLabel("얼음");
 		text3.setLocation(20, 235);
 		text3.setSize(500,150);
 		text3.setFont(new Font("", Font.BOLD, 16));
 		add(text3);
 		
-		//얼음 라디오버튼 생성
+		//얼음 라디오버튼
 		JRadioButton less = new JRadioButton("Less");
 		JRadioButton regular = new JRadioButton("Regular");
 		JRadioButton full = new JRadioButton("Full");
@@ -174,6 +174,7 @@ public class MilkTea extends JPanel {
 	
 		
 		//뒤로가기 버튼 삽입
+<<<<<<< HEAD
 				JButton back = new RoundedButton("Back");
 				back.setForeground(Color.white);
 				back.setLocation(20,415);
@@ -189,9 +190,26 @@ public class MilkTea extends JPanel {
 			    next.setSize(65,30);
 			    next.setBackground(gongcha);
 			   	add(next);
+=======
+		JButton back = new JButton("Back");
+		back.setForeground(Color.white);
+		back.setLocation(20,410);
+		back.setSize(65,30);
+		Color gongcha = new Color(184, 27, 46);
+		back.setBackground(gongcha);
+		add(back);
+		
+		//next 버튼 생성
+	    JButton next = new JButton("Next");
+	    next.setForeground(Color.white);
+	    next.setLocation(200,410);
+	    next.setSize(65,30);
+	    next.setBackground(gongcha);
+	   	add(next);
+>>>>>>> a8687a3c19fa2dc78915180acda464daffddb56c
 		
 		
-//		//하단 메뉴 생성
+//		//하단 메뉴 삽입
 //		JButton home = new JButton("HOME");
 //		home.setForeground(Color.white);
 //		Color a = new Color(184, 27, 46);

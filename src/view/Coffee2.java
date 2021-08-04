@@ -19,9 +19,11 @@ public class Coffee2 extends JPanel {
 	
 	public Coffee2() {
 
-		//메인 panel 만들기 
+		// 메인 panel 만들기
 		setLayout(null);
 		setBackground(Color.WHITE);
+		setLocation(500, 100);
+		setSize(300, 500);
 
 		// 공차 메인 로고 넣기
 		JLabel lbmain = new JLabel();

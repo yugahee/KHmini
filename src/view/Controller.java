@@ -14,6 +14,7 @@ public class Controller extends JFrame{
 	
 	JPanel title = new Title();
 	JPanel home = new Home();
+<<<<<<< HEAD
 
 //	JPanel pay = new Pay();
 //	JPanel store = new Store();
@@ -24,6 +25,11 @@ public class Controller extends JFrame{
 //	JPanel pay = new Pay();
 //	JPanel store = new Store();
 //	JPanel konkukst = new KonkukSt();
+=======
+	JPanel pay = new Pay();
+	JPanel store = new Store();
+	JPanel konkukst = new KonkukSt();
+>>>>>>> a8687a3c19fa2dc78915180acda464daffddb56c
 
 	
 	public static int money = 50000;		// 현재 잔액
@@ -65,21 +71,34 @@ public class Controller extends JFrame{
 			}
 		});
 		
+<<<<<<< HEAD
+=======
+
+
+// 		add(title);
+		add(home);						//완료
+// 		add(store);
+// 		add(konkukst);
+>>>>>>> a8687a3c19fa2dc78915180acda464daffddb56c
 //		add(new Payment());
 //		add(new Waiting());
 //		add(new Pay());
 //		add(new IsGongcharFirst());		//완료
 //		add(new Mypage());
 //		add(new Order());
+<<<<<<< HEAD
 //		add(store);
 //		add(konkukst);
 //		add(hongikunivst);
 //		add(gangnamst);
 //		add(home);						//완료
+=======
+>>>>>>> a8687a3c19fa2dc78915180acda464daffddb56c
 //		add(new Coffee());
 //		add(new Coffee2());
 //		add(new MilkTea());
 //		add(new MilkTea2());
+<<<<<<< HEAD
 //		add(new Smoothie());
 //		add(new Smoothie2());
 //		add(new Tea());
@@ -90,6 +109,9 @@ public class Controller extends JFrame{
 		add(new Shopping());
 
 		
+=======
+
+>>>>>>> a8687a3c19fa2dc78915180acda464daffddb56c
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setPreferredSize(new Dimension(300, 500));

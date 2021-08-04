@@ -40,40 +40,22 @@ public class KonkukSt extends JPanel{
 		add(lk2);
 		
 		JLabel lk3 = new JLabel("¿À½Ã´Â±æ");
-		lk3.setLocation(30, 220);
+		lk3.setLocation(30, 215);
 		lk3.setSize(300, 25);
 		lk3.setFont(new Font("±¼¸²", Font.BOLD, 11));
 		add(lk3);
 		
 		JLabel lk4 = new JLabel("°Ç´ëÀÔ±¸ 2¹ø Ãâ±¸ 220M, µµº¸ 5ºÐ");
-		lk4.setLocation(80, 220);
+		lk4.setLocation(80, 215);
 		lk4.setSize(300, 25);
 		lk4.setFont(new Font("±¼¸²", Font.PLAIN, 10));
 		add(lk4);
 		
-		JLabel lk5 = new JLabel("¿µ¾÷½Ã°£");
-		lk5.setLocation(30, 250);
+		JLabel lk5 = new JLabel("¸ÅÀÏ 10 : 00 ~  23 : 00");
+		lk5.setLocation(30, 245);
 		lk5.setSize(300, 25);
-		lk5.setFont(new Font("±¼¸²", Font.BOLD, 11));
+		lk5.setFont(new Font("±¼¸²", Font.BOLD, 10));
 		add(lk5);
-		
-		JLabel lk6 = new JLabel("¸ÅÀÏ 10 : 00 ~  23 : 00");
-		lk6.setLocation(80, 250);
-		lk6.setSize(300, 25);
-		lk6.setFont(new Font("±¼¸²", Font.PLAIN, 10));
-		add(lk6);
-		
-		JLabel lk7 = new JLabel("Á¦ÈÞ ¼­ºñ½º");
-		lk7.setLocation(30, 275);
-		lk7.setSize(300, 25);
-		lk7.setFont(new Font("±¼¸²", Font.BOLD, 11));
-		add(lk7);
-		
-		JLabel lk8 = new JLabel("T¸â¹ö½Ê");
-		lk8.setLocation(100, 275);
-		lk8.setSize(300, 25);
-		lk8.setFont(new Font("±¼¸²", Font.PLAIN, 10));
-		add(lk8);
 		
 		ImageIcon pickupIcon = new ImageIcon("image/pickupbutton2.png");
 		Image img2 = pickupIcon.getImage();

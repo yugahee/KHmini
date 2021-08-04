@@ -13,7 +13,7 @@ import roundedButton.RoundedButton;
 
 public class Mypage extends JPanel{
 	public Mypage() {
-
+ 
 		// 내정보 패널 생성
 		setLayout(null);
 		setBackground(Color.white);

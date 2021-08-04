@@ -14,26 +14,17 @@ public class Controller extends JFrame{
 	
 	JPanel title = new Title();
 	JPanel home = new Home();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4fc6e357f5e42c177daf1356b5e9ff1032d17046
 
-	JPanel pay = new Pay();
-	JPanel store = new Store();
-	JPanel konkukst = new KonkukSt();
-<<<<<<< HEAD
+//	JPanel pay = new Pay();
+//	JPanel store = new Store();
+//	JPanel konkukst = new KonkukSt();
+//
+//	JPanel hongikunivst = new HongikUnivSt();
+//	JPanel gangnamst = new GangnamSt();
+//	JPanel pay = new Pay();
+//	JPanel store = new Store();
+//	JPanel konkukst = new KonkukSt();
 
-=======
-	JPanel hongikunivst = new HongikUnivSt();
-	JPanel gangnamst = new GangnamSt();
-=======
-	JPanel pay = new Pay();
-	JPanel store = new Store();
-	JPanel konkukst = new KonkukSt();
-
->>>>>>> 5dddaa23b186f23f56a50c81e88e6baa8e016d17
->>>>>>> 4fc6e357f5e42c177daf1356b5e9ff1032d17046
 	
 	public static int money = 50000;		// 현재 잔액
 	public static int point = 0;			// 현재 포인트
@@ -74,40 +65,6 @@ public class Controller extends JFrame{
 			}
 		});
 		
-<<<<<<< HEAD
-		// add(home);
-		// add(title);
-		// add(store);
-		// add(konkukst);
-=======
-<<<<<<< HEAD
-//		add(home);
-//		add(title);
-//		add(title);
-=======
-<<<<<<< HEAD
-
-//		 add(home);
-		
-//		add(store);
-//		add(konkukst);
-
-//		add(title);
-=======
-<<<<<<< HEAD
-//		add(title);
-=======
-<<<<<<< HEAD
-		 add(home);
-		// add(title);
-		// add(store);
-		// add(konkukst);
-=======
-		add(title);
->>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
->>>>>>> 40a5a8a2959ed8b2b9cff1471a91b1a9324fa513
->>>>>>> 5dddaa23b186f23f56a50c81e88e6baa8e016d17
->>>>>>> 4fc6e357f5e42c177daf1356b5e9ff1032d17046
 //		add(new Payment());
 //		add(new Waiting());
 //		add(new Pay());
@@ -117,15 +74,10 @@ public class Controller extends JFrame{
 //		add(store);
 //		add(konkukst);
 //		add(hongikunivst);
-		add(gangnamst);
+//		add(gangnamst);
 //		add(home);						//완료
 //		add(new Coffee());
-<<<<<<< HEAD
-		add(new Coffee2());
-
-=======
 //		add(new Coffee2());
-<<<<<<< HEAD
 //		add(new MilkTea());
 //		add(new MilkTea2());
 //		add(new Smoothie());
@@ -134,19 +86,9 @@ public class Controller extends JFrame{
 //		add(new Tea2());
 //		add(new Season());
 //		add(new Season2());
-		add(new Cake());
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-//		add(new MilkTea());
-//		add(new MilkTea2());
-=======
->>>>>>> a8c64026d500b67a6a675b02b1e152902e294fab
->>>>>>> 05c395bee1cc285966972fabacec10aa09acfa96
->>>>>>> 40a5a8a2959ed8b2b9cff1471a91b1a9324fa513
->>>>>>> 5dddaa23b186f23f56a50c81e88e6baa8e016d17
->>>>>>> 4fc6e357f5e42c177daf1356b5e9ff1032d17046
+//		add(new Cake());
+		add(new Shopping());
+
 		
 		setResizable(false);
 		setLocationRelativeTo(null);
